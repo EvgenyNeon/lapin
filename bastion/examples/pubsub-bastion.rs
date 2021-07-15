@@ -53,7 +53,7 @@ pub async fn consume() -> Result<()> {
                 "",
                 "hello",
                 BasicPublishOptions::default(),
-                payload.to_vec(),
+                payload.to_vec().as_slice(),
                 BasicProperties::default(),
             )
             .await?

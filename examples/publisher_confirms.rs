@@ -76,7 +76,7 @@ fn main() {
                 "",
                 "hello",
                 BasicPublishOptions::default(),
-                payload.to_vec(),
+                payload.to_vec().as_slice(),
                 BasicProperties::default(),
             )
             .await
@@ -93,7 +93,7 @@ fn main() {
                     "",
                     "hello",
                     BasicPublishOptions::default(),
-                    payload.to_vec(),
+                    payload.to_vec().as_slice(),
                     BasicProperties::default(),
                 )
                 .await
@@ -115,7 +115,7 @@ fn main() {
                     mandatory: true,
                     ..BasicPublishOptions::default()
                 },
-                payload.to_vec(),
+                payload.to_vec().as_slice(),
                 BasicProperties::default().with_priority(42),
             )
             .await

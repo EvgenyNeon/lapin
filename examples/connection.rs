@@ -75,7 +75,7 @@ fn main() {
                     "",
                     "hello",
                     BasicPublishOptions::default(),
-                    payload.to_vec(),
+                    payload.to_vec().as_slice(),
                     BasicProperties::default(),
                 )
                 .await

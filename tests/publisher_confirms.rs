@@ -1,1 +1,1 @@
-../examples/publisher_confirms.rs
+// ../examples/publisher_confirms.rs
